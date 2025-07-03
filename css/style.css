@@ -530,7 +530,7 @@ body {
   width: 30px;
   height: 2px;
   background-color: black;
-  margin-right: 10px;
+  margin-right: 11px;
   vertical-align: middle;
 }
 .second-text-area .submit-button {
@@ -542,7 +542,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -581,7 +581,7 @@ body {
 
 .testimonial-section .testimonial-header p {
   color: #3D3D3D;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 
