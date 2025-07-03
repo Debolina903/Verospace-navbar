@@ -7,10 +7,9 @@ toggle.addEventListener("click", () => {
   navRight.classList.toggle("active");
 });
 
-
 // PROPERTY SECTION JS 
 document.addEventListener("DOMContentLoaded", function () {
-  const swiper = new Swiper(".propertySwiper", {
+  const propertySwiper = new Swiper(".propertySwiper", {
     slidesPerView: 1,
     spaceBetween: 20,
     loop: true,
@@ -44,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // TESTIMONIAL SECTION 
-
 document.addEventListener("DOMContentLoaded", function () {
   const testimonialSwiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
@@ -67,32 +65,33 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 // TRUSTED SWIPER AUTO SCROLL 
-const swiper = new Swiper('.trusted-swiper', {
-      loop: true,
-      autoplay: {
-        delay: 0,
-        disableOnInteraction: false,
+document.addEventListener("DOMContentLoaded", function () {
+  const trustedSwiper = new Swiper('.trusted-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    speed: 3000,
+    grabCursor: true,
+    freeMode: true,
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+        spaceBetween: 10,
       },
-      speed: 3000,
-      grabCursor: true,
-      freeMode: true,
-      breakpoints: {
-        0: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 15,
-        },
-        992: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 5,
-          spaceBetween: 45,
-          gap:20,
-        },
-      }
-    });
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      1200: {
+        slidesPerView: 5,
+        spaceBetween: 45,
+      },
+    }
+  });
+});
