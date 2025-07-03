@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
-// TESTIMONIAL SECTION 
+// TESTIMONIAL SECTIONN
 document.addEventListener("DOMContentLoaded", function () {
   const testimonialSwiper = new Swiper(".testimonialSwiper", {
     slidesPerView: 1,
