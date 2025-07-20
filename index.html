@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- fontawesome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- google font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link swiper -->
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- AOS css -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preload" as="image" href="./assets/backgroundimg.png" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="navbar">
+      <div class="container">
+        <nav class="nav-container">
+          <!-- Mobile Menu Toggle -->
+          <label class="burger" for="burger">
+            <input type="checkbox" id="burger" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+
+          <!-- Navigation Links - Left -->
+          <ul class="nav-left">
+            <li><a href="./index.html" class="nav-link active">Home</a></li>
+            <li><a href="./about_us.html" class="nav-link">About Us</a></li>
+            <li>
+              <a href="./submit_property.html" class="nav-link">Properties</a>
+            </li>
+          </ul>
+
+          <!-- Logo -->
+          <div class="logo">
+            <a href="/" class="logo-link">
+              <img
+                src="./assets/Group 2.png"
+                alt="VeroSpace logo"
+                class="logo-icon"
+              />
+            </a>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="nav-right">
+            <li><a href="./contact_us.html" class="nav-link">Contact Us</a></li>
+            <li><a href="login.html" class="login-btn">Login</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Banner Section -->
+    <section class="banner-section">
+      <div class="fluid-container">
+        <div class="container-wrapper">
+          <div class="hero-content">
+            <h1 data-aos="fade-up" data-aos-duration="800">
+              Perfect Platform For Buying Or <br />
+              Renting <span class="highlight">Houses, Flats, And Villas</span>
+            </h1>
+            <p class="subtext">
+              Search thousands of homes. Find the one that fits you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  YOUR FLOATING FILTER HERE -->
+
+    <div class="floating-range-hero" >
+      <div class="container">
+        <div class="row floating-row">
+          <!-- Left: Rent/Buy/Lease -->
+          <div class="rent">
+            <div class="form-group rent-select">
+              <div class="select-wrapper">
+                <img
+                  src="./assets/dollar-sign 1.png"
+                  class="select-icon"
+                  alt="icon"
+                />
+                <select>
+                  <option>Rent</option>
+                  <option>Buy</option>
+                  <option>Lease</option>
+                </select>
+              </div>
+            </div>
+
+            <div>Price Range</div>
+            <div class="form-group USD-select">
+              <div class="select-wrapper">
+                <img src="./assets/$.png" alt="USD Icon" class="select-icon" />
+                <select>
+                  <option>USD</option>
+                  <option>INR</option>
+                  <option>EUR</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Middle: Location and Range -->
+          <div class="col6 range">
+            <div class="form-group location-input">
+              <input
+                type="text"
+                placeholder="Your desired location goes here"
+              />
+            </div>
+            <div class="price-range">
+              <div class="range-slider">
+                <div class="range-track"></div>
+                <div class="range-thumb left"></div>
+                <div class="range-thumb right"></div>
+              </div>
+            </div>
+            <div class="price-values">
+              <div class="price-value">$ 5,000</div>
+              <div class="price-value">$ 15,000</div>
+            </div>
+          </div>
+
+          <!-- Right: House Type + Rooms -->
+          <div class="house">
+            <div class="form-group house-select">
+              <div class="select-wrapper">
+                <img
+                  src="./assets/Frame.png"
+                  alt="House Icon"
+                  class="select-icon"
+                />
+                <select>
+                  <option>House</option>
+                  <option>Apartment</option>
+                  <option>Condo</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group rooms-select">
+              <div class="select-wrapper">
+                <img
+                  src="./assets/ic_round-meeting-room.png"
+                  alt="Rooms Icon"
+                  class="select-icon"
+                />
+                <select>
+                  <option>2 Rooms</option>
+                  <option>1 Room</option>
+                  <option>3 Rooms</option>
+                  <option>4+ Rooms</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Button -->
+          <button class="search">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FLOATING SECTION ENDS HERE -->
+
+    <!-- Apartment Types Section -->
+    <section class="xplr-aprtmnt-typs" data-aos="fade-up" data-aos-duration="800">
+      <div class="container">
+        <h2 data-aos="fade-down" data-aos-duration="1000">Explore Apartment Types</h2>
+        <div class="row">
+          <div class="col2" data-aos="zoom-in" data-aos-delay="100">
+            <div class="property-card">
+              <img
+                src="./assets/gridicons_house.png"
+                alt="Commercial Property"
+              />
+              <h3 class="property-title">Commercial</h3>
+              <p class="property-count">6 Properties</p>
+            </div>
+          </div>
+
+          <div class="col2" data-aos="zoom-in" data-aos-delay="200">
+            <div class="property-card">
+              <img
+                src="./assets/mingcute_building-5-line.png"
+                alt="Residential Property"
+              />
+              <h3 class="property-title">Residential</h3>
+              <p class="property-count">6 Properties</p>
+            </div>
+          </div>
+
+          <div class="col2" data-aos="zoom-in" data-aos-delay="300">
+            <div class="property-card">
+              <img
+                src="./assets/game-icons_medieval-village-01.png"
+                alt="Villa Property"
+              />
+              <h3 class="property-title">Villa</h3>
+              <p class="property-count">6 Properties</p>
+            </div>
+          </div>
+
+          <div class="col2" data-aos="zoom-in" data-aos-delay="400">
+            <div class="property-card">
+              <img
+                src="./assets/ph_building-apartment.png"
+                alt="Apartment Property"
+              />
+              <h3 class="property-title">Apartment</h3>
+              <p class="property-count">6 Properties</p>
+            </div>
+          </div>
+
+          <div class="col2"  data-aos="zoom-in" data-aos-delay="500">
+            <div class="property-card">
+              <img
+                src="./assets/ph_warehouse-bold (1).png"
+                alt="Warehouse Property"
+              />
+              <h3 class="property-title">Warehouse</h3>
+              <p class="property-count">6 Properties</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section  -->
+
+    <section
+      class="aboutus"
+      data-aos="fade-up"
+      data-aos-delay="200"
+      data-aos-duration="1000"
+    >
+      <div class="container">
+        <div class="row aboutus-row">
+          <!-- Left Side Image -->
+          <div
+            class="about-left"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <div class="image-wrapper">
+              <img
+                class="main-image"
+                src="./assets/image (3).png"
+                alt="Main Background Image"
+              />
+              <img
+                class="top-floating"
+                src="./assets/Group 8.png"
+                alt="Top Floating Image"
+              />
+            </div>
+          </div>
+
+          <!-- Right Side Content -->
+          <div
+            class="about-right col6"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+          >
+            <div class="dash-about">
+              <span></span>
+              <p>About Us</p>
+            </div>
+            <h2>Welcome To VeroSpace, Your Trusted Real Estate Expert.</h2>
+            <p class="lato">
+              We believe real estate is more than transactions—it’s about
+              people, relationships, and the moments that turn a house into a
+              home. That’s why we’re here to support you like a trusted friend,
+              every step of the way.
+            </p>
+
+            <!-- Counter Boxes -->
+            <div class="counter">
+              <div class="row stats-row">
+                <div class="col4">
+                  <div class="stats-card">
+                    <div class="stats-icon">
+                      <img
+                        src="./assets/fa-solid_smile.png"
+                        alt="Customer Icon"
+                      />
+                    </div>
+                    <div class="stats-content">
+                      <div class="stats-number" data-target="15000">15K+</div>
+                      <div class="stats-label">TRUSTED CUSTOMER</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col4">
+                  <div class="stats-card">
+                    <div class="stats-icon">
+                      <img
+                        src="./assets/gridicons_house.png"
+                        alt="House Icon"
+                      />
+                    </div>
+                    <div class="stats-content">
+                      <div class="stats-number" data-target="20000">20K+</div>
+                      <div class="stats-label">SOLD HOUSE</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col4">
+                  <div class="stats-card">
+                    <div class="stats-icon">
+                      <img
+                        src="./assets/fluent_agents-28-filled.png"
+                        alt="Property Icon"
+                      />
+                    </div>
+                    <div class="stats-content">
+                      <div class="stats-number" data-target="75000">75K+</div>
+                      <div class="stats-label">PROPERTY LISTED</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Counter -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Property Listing Section -->
+    <section class="property-listing">
+      <div class="fluid-container">
+        <div class="heading">
+          <div class="badge-line-wrapper">
+            <span class="section-line" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800"></span>
+            <div class="status-badge" data-aos="fade-left" data-aos-delay="300">Recently Added</div>
+          </div>
+
+          <div class="new-list">
+            <h2 data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="800">Explore Our Newly Listed Properties</h2>
+            <button class="all-listing-btn">All Listing</button>
+          </div>
+        </div>
+
+        <div class="swiper propertySwiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="swiper-card one">
+                <div class="card-content">
+                  <div class="property-info">
+                    <div class="title">Sobha Heartland <br />Villa</div>
+                    <div class="rating">
+                      <img
+                        src="./assets/material-symbols_star-rounded.png"
+                        alt="Star"
+                      />
+                      4.8
+                    </div>
+                  </div>
+                  <div class="property-actions">
+                    <div class="location">
+                      <img
+                        src="./assets/fluent_location-16-filled.png"
+                        alt="Location"
+                      />
+                      <span>Berlin, Germany</span>
+                    </div>
+                    <button class="details-btn">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="swiper-card five">
+                <div class="card-content">
+                  <div class="property-info">
+                    <div class="title">Hillside Haven</div>
+                    <div class="rating">
+                      <img
+                        src="./assets/material-symbols_star-rounded.png"
+                        alt="Rating"
+                      />
+                      4.9
+                    </div>
+                  </div>
+                  <div class="property-actions">
+                    <div class="location">
+                      <img
+                        src="./assets/fluent_location-16-filled.png"
+                        alt="Location"
+                      />
+                      <span>Genoa, Italy</span>
+                    </div>
+                    <button class="details-btn">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="swiper-card six">
+                <div class="card-content">
+                  <div class="property-info">
+                    <div class="title">Lakeview Cottage</div>
+                    <div class="rating">
+                      <img
+                        src="./assets/material-symbols_star-rounded.png"
+                        alt="Rating"
+                      />
+                      4.7
+                    </div>
+                  </div>
+                  <div class="property-actions">
+                    <div class="location">
+                      <img
+                        src="./assets/fluent_location-16-filled.png"
+                        alt="Location"
+                      />
+                      <span>Zurich, Switzerland</span>
+                    </div>
+                    <button class="details-btn">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="swiper-card seven">
+                <div class="card-content">
+                  <div class="property-info">
+                    <div class="title">Central City Loft</div>
+                    <div class="rating">
+                      <img
+                        src="./assets/material-symbols_star-rounded.png"
+                        alt="Rating"
+                      />
+                      4.6
+                    </div>
+                  </div>
+                  <div class="property-actions">
+                    <div class="location">
+                      <img
+                        src="./assets/fluent_location-16-filled.png"
+                        alt="Location"
+                      />
+                      <span>New York, USA</span>
+                    </div>
+                    <button class="details-btn">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  Pagination -->
+         
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Other Service Section -->
+    <section class="other-service-section"  >
+      <div class="container row">
+        <!-- Left Content -->
+        <div class="col6 other-service-left">
+          <div class="section-tag">
+            <div class="line"></div>
+            <span>Other Service</span>
+          </div>
+          <h3>
+            We Make Sell Or Rent Your Property<br />
+            Simple and Profitable
+          </h3>
+          <p>
+            We are the most respected Realestate company in the industry. We
+            deliver extraordinary facility to the customer.<br> <br> Lorem ipsum dolor
+            sit amet consectetur. Et aliquet sed nibh porttitor lacus. Sodales
+            maecenas aliquam dis neque posuere urna. Sodales.
+          </p>
+          <a href="#" class="primary-btn">SUBMIT PROPERTY</a>
+        </div>
+
+        <!-- Right Image -->
+      
+   <div class="col6 other-service-right">
+  <div class="main-image-wrapper">
+    <img class="main-image" src="./assets/Rectangle 38.png" alt="Main House Image" />
+    <div class="floating-image-wrapper">
+      <img class="floating-image" src="./assets/Rectangle 39.png" alt="For Sale" />
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </section>
+
+    
+  <!-- Testimonials Section -->
+    <section
+      class="testimonial-section"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+    >
+      <div class="testimonial-header" data-aos="fade-up" data-aos-delay="100">
+        <p>Testimonials</p>
+        <h2>What Our Customer Says</h2>
+      </div>
+
+      <div
+        class="swiper testimonialSwiper"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <div class="swiper-wrapper">
+          <!-- Testimonial Slides -->
+          <div
+            class="swiper-slide testimonial-slide"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="testimonial-card card-third">
+              <div class="white-box">
+                <p>
+                  Lorem ipsum dolor sit amet consec. Mauris a vitae commodo
+                  neque viverra elementum quam turpis morbi. suspendisse orci
+                  tristique leo sit eu nunc.
+                </p>
+                <hr />
+                <div class="testimonial-profile">
+                  <img
+                    src="./assets/Ellipse 6.png"
+                    alt="William Jones"
+                  />
+                  <div>
+                    <h4>William Jones</h4>
+                    <div class="stars">★ ★ ★ ★ ★ ☆</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide testimonial-slide"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div class="testimonial-card card-first">
+              <div class="white-box">
+                <p>
+                  Lorem ipsum dolor sit amet consec. Mauris a vitae commodo
+                  neque viverra elementum quam turpis morbi. suspendisse orci
+                  tristique leo sit eu nunc.
+                </p>
+                <hr />
+                <div class="testimonial-profile">
+                  <img
+                    src="./assets/Ellipse 6 (1).png"
+                    alt="William Jones"
+                  />
+                  <div>
+                    <h4>William Jones</h4>
+                    <div class="stars">★ ★ ★ ★ ★ ☆</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="swiper-slide testimonial-slide"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div class="testimonial-card card-second">
+              <div class="white-box">
+                <p>
+                  Lorem ipsum dolor sit amet consec. Mauris a vitae commodo
+                  neque viverra elementum quam turpis morbi. suspendisse orci
+                  tristique leo sit eu nunc.
+                </p>
+                <hr />
+                <div class="testimonial-profile">
+                  <img
+                    src="./assets/Ellipse 6.png"
+                    alt="William Jones"
+                  />
+                  <div>
+                    <h4>William Jones</h4>
+                    <div class="stars">★ ★ ★ ★ ★ ☆</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   TRUSTED COMPANIES SECTION-->
+    <section class="trusted-companies">
+      <h2 class="trusted-heading">Trusted by 200+ Companies</h2>
+      <div class="swiper trusted-swiper">
+        <div class="swiper-wrapper">
+          <!-- Company Logos -->
+          <div class="swiper-slide">
+            <img src="./assets/image 187.png" alt="Logo 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 189.png" alt="Logo 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 190.png" alt="Logo 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 191.png" alt="Logo 4" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 192.png" alt="Logo 5" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 187.png" alt="Logo 6" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets//image 189.png" alt="Logo 7" />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/image 190.png" alt="Logo 8" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="row">
+          <div class="col55">
+            <div class="news-title">
+              <h2 class="newsletter-title">Newsletter To Get Updated</h2>
+              <h2 class="newsletter-title">The Latest News</h2>
+            </div>
+          </div>
+
+          <div class="col66">
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Enter your email address"
+                required
+              />
+              <button type="submit" class="newsletter-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Footer Section -->
+<footer class="main-footer">
+  <div class="container footer-row">
+    <!-- Column 1: Brand -->
+    <div class="footer-brand">
+      <img src="./assets/Group 24.png" alt="VeroSpace Logo" class="footer-logo" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur. Pharetra <br />ornare aliquet nunc dui in scelerporttitor. Proin<br /> ullamcorper.
+      </p>
+      <div class="social-icons">
+        <a href="#"><img src="./assets/Group 57.png" alt="Facebook" /></a>
+        <a href="#"><img src="./assets/Group 58.png" alt="Twitter" /></a>
+        <a href="#"><img src="./assets/Group 59.png" alt="Instagram" /></a>
+        <a href="#"><img src="./assets/Group 60.png" alt="YouTube" /></a>
+      </div>
+    </div>
+
+    <!-- Column 2: Useful Links -->
+    <div class="footer-links">
+      <h2>Useful Links</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Properties</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Our Properties -->
+    <div class="our-properties">
+      <h2 class="properties-title">Our Properties</h2>
+      <div class="properties-content">
+        <div class="first-row">
+          <a href="#"><img src="./assets/Rectangle 48.png" alt="Property 1" /></a>
+          <a href="#"><img src="./assets/Rectangle 49.png" alt="Property 2" /></a>
+          <a href="#"><img src="./assets/Rectangle 50.png" alt="Property 3" /></a>
+          <a href="#"><img src="./assets/Rectangle 51.png" alt="Property 4" /></a>
+        </div>
+        <div class="second-row">
+          <a href="#"><img src="./assets/Rectangle 52.png" alt="Property 5" /></a>
+          <a href="#"><img src="./assets/Rectangle 53.png" alt="Property 6" /></a>
+          <a href="#"><img src="./assets/Rectangle 54.png" alt="Property 7" /></a>
+          <a href="#"><img src="./assets/Rectangle 55.png" alt="Property 8" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div class="second-footer">
+    <div class="container footer-content">
+      <div class="copyright">
+        © 2024 VeroSpace, All rights reserved
+      </div>
+      <div class="second-footer-links">
+        <div class="services"><a href="#">Terms of Service</a></div>
+        <div class="policy"><a href="#">Privacy Policy</a></div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Swiper JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
